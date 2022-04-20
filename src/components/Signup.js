@@ -55,7 +55,7 @@ export default function SignUp() {
     e.preventDefault();
 
     axios
-      .post(`http://localhost:4000/newregister`, {
+      .post(`https://nir1-todoapp-backend.herokuapp.com/newregister`, {
         name: name,
         username: userName,
         password: password,
