@@ -38,7 +38,7 @@ function Home() {
 
   let getData = () => {
     console.log("Reload");
-    const URL = `http://localhost:4000/getdata`;
+    const URL = `https://nir1-todoapp-backend.herokuapp.com/getdata`;
     Axios.get(URL, { params: { usernameCookie } })
       .then((response) => {
         debugger;

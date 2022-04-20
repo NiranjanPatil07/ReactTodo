@@ -37,7 +37,7 @@ function AddTodo({ setCount, Count, update }) {
       tododate,
     };
 
-    fetch("http://localhost:4000/UpdateData", {
+    fetch("https://nir1-todoapp-backend.herokuapp.com/UpdateData", {
       method: "PATCH",
       headers: {
         Accept: "application/json",
@@ -60,7 +60,7 @@ function AddTodo({ setCount, Count, update }) {
     e.preventDefault();
 
     axios
-      .post(`http://localhost:4000/postdata`, {
+      .post(`https://nir1-todoapp-backend.herokuapp.com/postdata`, {
         name: todoname,
         date: tododate,
         username: usernameCookie,

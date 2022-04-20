@@ -43,7 +43,7 @@ function DisplayData({
 
   let deletedata = (e) => {
     axios
-      .delete(`http://localhost:4000/deletedata`, {
+      .delete(`https://nir1-todoapp-backend.herokuapp.com/deletedata`, {
         data: { idtodolists: e },
       })
       .then((result) => {
