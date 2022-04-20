@@ -71,6 +71,8 @@ function AddTodo({ setCount, Count, update }) {
       .catch(function (error) {
         console.log(error);
       });
+    settodoname("");
+    settododate("");
   };
   return (
     <div className="card">
