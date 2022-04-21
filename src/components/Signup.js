@@ -26,8 +26,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://www.portqii.com/">
+        PortQii
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -70,6 +70,11 @@ export default function SignUp() {
       .catch(function (error) {
         console.log(error);
       });
+  };
+
+  let signIn = () => {
+    console.log("SignIn");
+    navigate("/SignIn");
   };
 
   return (
@@ -165,8 +170,8 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
+                <Link variant="body2" onClick={signIn}>
+                  {"Already have an account? Sign in"}
                 </Link>
               </Grid>
             </Grid>
