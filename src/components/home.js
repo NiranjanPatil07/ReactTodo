@@ -41,7 +41,7 @@ function Home() {
     const URL = `https://nir1-todoapp-backend.herokuapp.com/getdata`;
     Axios.get(URL, { params: { usernameCookie } })
       .then((response) => {
-        debugger;
+        // debugger;
         let tododata = response.data;
         setData(tododata);
         // console.log(data);
@@ -58,10 +58,10 @@ function Home() {
       <ButtonAppBar />
       <div className="mt-5 container">
         <div className="row">
-          <div className="col">
+          <div className="col d-flex justify-content-center mb-5">
             <AddTodo setCount={setCount} Count={Count} update={update} />
           </div>
-          <div className="col">
+          <div className="col m-2">
             <DisplayData
               tododata={data}
               setCount={setCount}
