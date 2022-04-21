@@ -74,7 +74,7 @@ export default function SignUp() {
 
   let signIn = () => {
     console.log("SignIn");
-    navigate("/SignIn");
+    navigate("/");
   };
 
   return (
