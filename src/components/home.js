@@ -1,5 +1,6 @@
 import AddTodo from "./AddTodo";
 import DisplayData from "./DisplayTable";
+import Welcome from "./Welcome";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -57,6 +58,7 @@ function Home() {
     <div className="App">
       <ButtonAppBar />
       <div className="mt-5 container">
+        <Welcome />
         <div className="row">
           <div className="col d-flex justify-content-center mb-5">
             <AddTodo setCount={setCount} Count={Count} update={update} />
